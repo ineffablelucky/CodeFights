@@ -1,11 +1,12 @@
-# Your task today is simple: given an array of strings words and a string text, return, for each word w in words, how many occurrences of w are in text.
+# given an array of strings words and a string text, return, for each word w in words, how many occurrences of w are in text.
 
 # Example
 
 # For text = "aaaa" and words = ["a", "aa", "aaa", "aaaa"],
 # the output should be
 # countingOccurrences(text, words) = [4, 3, 2, 1].
-# There are 4 occurrences of "a" in "aaaa", 3 occurrences of "aa" in "aaaa", 2 occurrences of "aaa" in "aaaa" and 1 occurrence of "aaaa" in "aaaa".
+# There are 4 occurrences of "a" in "aaaa", 3 occurrences of "aa" in "aaaa", 2 occurrences of "aaa" in "aaaa" 
+# and 1 occurrence of "aaaa" in "aaaa".
 
 
 def countingOccurrences(text, words):
