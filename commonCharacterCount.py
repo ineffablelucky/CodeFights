@@ -9,14 +9,14 @@
 
 def commonCharacterCount(s1, s2):
     from collections import Counter
-    s1list=[l for l in s1]
-    s2list=[l for l in s2]
-    s1dict=Counter(s1list)
+    s1list=[letter for letter in s1]
+    s2list=[letter for letter in s2]
+    s1dict=Counter(s1list) #this will convert list into dictionary with each letter as key and thier count of occurence in that list as values
     s2dict=Counter(s2list)
     count=0
     for i in s1dict.keys():
         for j in s2dict.keys():
             if i==j:
-                count+=min(s1dict[i],s2dict[j])
+                count+=min(s1dict[i],s2dict[j]) # add the min of two values of same letter found in both dictionaries 
 
     return count
