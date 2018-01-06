@@ -10,8 +10,8 @@ def allLongestStrings(inputArray):
     result = []
     maxlength = len(max(inputArray, key=len))
 
-    for i in inputArray:
-        if len(i) == maxlength:
-            result.append(i)
+    for item in inputArray:
+        if len(item) == maxlength:
+            result.append(item)
 
     return result
